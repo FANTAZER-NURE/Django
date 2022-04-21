@@ -14,3 +14,7 @@ def main(request):
 
 def contacts(request):
     return render(request, 'app1/contact.html')
+
+def rooms(request):
+    return render(request, 'app1/room.html')
+

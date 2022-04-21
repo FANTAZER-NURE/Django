@@ -1,0 +1,213 @@
+        /*MAIN PAGE*/
+
+/*INTRO*/
+
+@media screen and (max-width: 1180px){
+    .header {
+        padding-top: 20px;
+    }
+    .header__logo {
+        padding-top: 0px;
+    }
+
+}
+
+
+@media screen and (max-width: 1050px){
+    .header__logo{
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        grid-row: 2/3;
+        grid-column: 1/3;
+
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .nav {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .header {
+        padding-top: 20px;
+    }
+    #mobile_icon{
+        display: block;
+    }
+    .nav__link {
+        display: none;
+    }
+    .header__inner {
+        display: block;
+    }
+
+    .header {
+        padding-top: 0px;
+    }
+}
+
+
+
+
+/*OUR ROOMS*/
+
+@media screen and (max-width: 1200px) {
+
+    .our_rooms {
+        height: 150vh;
+    }
+
+    .rooms_container {
+        width: 100%;
+    }
+
+    .rooms {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .our_rooms {
+        height: 290vh;
+    }
+
+    .rooms {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+/*TEXT SECTION*/
+
+@media screen and (max-width: 1400px) and (min-width: 1240px) {
+    .find_btn {
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1430px) {
+
+    .text_section {
+
+        height: 80vh;
+
+    }
+
+    .text_section_img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+
+    .text_section {
+
+        height: 90vh;
+
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .text_section {
+
+        height: 110vh;
+
+    }
+}
+
+@media screen and (max-width: 665px) {
+
+    .text_section {
+
+        height: 120vh;
+
+    }
+}
+
+
+/*FOOTER*/
+
+@media screen and (max-width: 1210px) {
+
+    #tweets {
+        display: none;
+    }
+}
+
+.footer_container {
+    display: flex;
+    width: 85%;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+@media screen and (max-width: 875px) {
+    #links {
+        display: none;
+    }
+
+    .footer_container {
+        display: flex;
+        width: 85%;
+        height: 100%;
+        justify-content: space-between;
+        margin: 0 auto;
+
+    }
+}
+
+
+/*ROOM*/
+
+@media screen and (max-width: 1300px) {
+    .description {
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .desc_text {
+        padding-top: 1%;
+
+        width: 100%;
+    }
+
+    .prices_table {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+        margin-left: 100px;
+
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .prices_table {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+        margin-left: 0px;
+
+    }
+}
+
+
