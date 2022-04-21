@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,28 +9,13 @@
 {#    <link rel="stylesheet" href="styles/styles.css">#}
 {#    <link rel="stylesheet" href="styles/media.css">#}
 {#    <link rel="stylesheet" href="./styles/styles.css">#}
-
-    {% load static %}
-    <link rel=”stylesheet” href="{% static "styles/styles.css" %}">
+    <link rel=”stylesheet” type="text/css" href="{% static 'styles/styles.css' %}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/74e4d53d6a.js" crossorigin="anonymous"></script>
     <script src="jquery-3.0.0.min.js"></script>
-    <!-- <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
-<script crossorigin="anonymous"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
-
-
     <title>MAIN</title>
 </head>
 <body onload="Init ()">
@@ -111,7 +97,7 @@
                 <a class="social_item" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a class="social_item" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a class="social_item" href="https://www.pinterest.com/.com" target="_blank"><i class="fab fa-pinterest-p"></i></a>
-                <a id="inst"class="social_item" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a id="inst" class="social_item" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
 
             <div class="main">
@@ -287,26 +273,26 @@
     </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $( '#our_rooms').on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({scrollTop: $('#rooms').offset().top - 70}, 700)
-        })
-    </script>
-    <script type="text/javascript">
-        $( '#our_rooms1').on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({scrollTop: $('#rooms').offset().top - 70}, 700)
-        })
-    </script>
-    <script type="text/javascript">
-        $( '#explore').on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({scrollTop: $('#text').offset().top - 70}, 700)
-        })
-    </script>
-    <script src="../JS/forms.js"></script>
+{#    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>#}
+{#    <script type="text/javascript">#}
+{#        $( '#our_rooms').on('click', function (e) {#}
+{#            e.preventDefault();#}
+{#            $('html, body').animate({scrollTop: $('#rooms').offset().top - 70}, 700)#}
+{#        })#}
+{#    </script>#}
+{#    <script type="text/javascript">#}
+{#        $( '#our_rooms1').on('click', function (e) {#}
+{#            e.preventDefault();#}
+{#            $('html, body').animate({scrollTop: $('#rooms').offset().top - 70}, 700)#}
+{#        })#}
+{#    </script>#}
+{#    <script type="text/javascript">#}
+{#        $( '#explore').on('click', function (e) {#}
+{#            e.preventDefault();#}
+{#            $('html, body').animate({scrollTop: $('#text').offset().top - 70}, 700)#}
+{#        })#}
+{#    </script>#}
+{#    <script src="../JS/forms.js"></script>#}
 
 </body>
 </html>

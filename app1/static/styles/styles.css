@@ -1,3 +1,10 @@
 * {
     background: red;
 }
+
+h1, h2, h3{
+    color: aquamarine;
+}
+.header{
+    background: black;
+}
