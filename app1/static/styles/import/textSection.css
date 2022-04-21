@@ -1,0 +1,55 @@
+
+/*TEXT SECTION*/
+
+.text_section {
+    display: flex;
+    background-color: #0e6fb3;
+    height: 120vh;
+
+}
+
+.text {
+    display: block;
+    text-align: center;
+}
+
+.find_title {
+    display: block;
+    margin: 0 auto;
+    font-size: 56px;
+    text-align: center;
+    font-family: 'Gilda Display', serif;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 90%;
+    color: #fff;
+}
+
+.find_text {
+    font-size: 18px;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
+.find_btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 50px;
+    background: #fff;
+    margin: 100px auto 10px auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #686868;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .2s linear, color .2s linear, border-color .2s linear;
+}
+
+.find_btn:hover {
+    color: #fff;
+    background: #c19b76;
+}

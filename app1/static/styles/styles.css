@@ -1,10 +1,11 @@
-* {
-    background: red;
-}
-
-h1, h2, h3{
-    color: aquamarine;
-}
-.header{
-    background: black;
+@import "import/header.css";
+@import "import/intro.css";
+@import "import/ourRooms.css";
+@import "import/textSection.css";
+@import "import/footer.css";
+@import "import/contacts.css";
+body {
+    font-family: 'Gilda Display', serif;
+    color: #ffffff;
+    margin: 0;
 }

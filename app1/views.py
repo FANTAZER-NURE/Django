@@ -11,3 +11,6 @@ def index(request):
 def main(request):
     # return HttpResponse("<h1>aboba2</h1>")
     return render(request, 'app1/index.html')
+
+def contacts(request):
+    return render(request, 'app1/contact.html')

@@ -1,0 +1,92 @@
+/*OUR ROOMS*/
+
+.our_rooms {
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.rooms_container {
+    display: block;
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.room_title {
+    display: block;
+    margin: 0 auto;
+    font-size: 56px;
+    text-align: center;
+    font-family: 'Gilda Display', serif;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    color: #686868;
+}
+
+.rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2em;
+    justify-items: center;
+
+}
+
+.room {
+    height: 270px;
+    max-width: 370px;
+    background-size: 100% auto;
+    background-image: url(../../img/room1.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    width:100%
+}
+
+[id="2"] {
+    background-image: url(../../img/room2.png);
+}
+
+[id="3"] {
+    background-image: url(../../img/room3.png);
+}
+
+[id="4"] {
+    background-image: url(../../img/room4.png);
+}
+
+[id="5"] {
+    background-image: url(../../img/rom5.png);
+}
+
+[id="6"] {
+    background-image: url(../../img/room6.png);
+}
+
+.room_btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    /* border: 3px solid #76c38f; */
+    background: #c19b76;
+    margin: 150px auto 10px auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .2s linear, color .2s linear, border-color .2s linear;
+}
+
+.room_btn:hover {
+    color: #c19b76;
+    background: #fff;
+}
+
+.price {
+    text-align: center;
+    text-transform: uppercase;
+}

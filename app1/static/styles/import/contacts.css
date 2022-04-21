@@ -1,0 +1,42 @@
+/*CONTACT PAGE*/
+
+#nav_contact {
+    color: #fff;
+    /*border: 2px solid #76c38f;*/
+    padding: 10px;
+    border-radius: 9px;
+    background: #c19b76;
+    pointer-events: none;
+
+}
+
+.contact_title {
+    color: #c19b76;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 56px;
+}
+
+table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    width: 75%;
+    color: #c19b76;
+    font-family: 'Gilda Display', serif;
+    margin:  auto;
+
+
+}
+
+tr {
+    height: 50px;
+}
+
+th {
+    border: 1px solid grey;
+ }
+
+td {
+    border: 1px solid grey;
+ }
+
