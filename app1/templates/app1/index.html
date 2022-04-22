@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
+    <script src="https://kit.fontawesome.com/74e4d53d6a.js" crossorigin="anonymous"></script>
     <title>MAIN</title>
 </head>
 <body>
@@ -14,6 +15,7 @@
                     <div class="header__logo">Каравелла</div>
 
                     <nav class="nav">
+
                         <div class="nav_item">
                             <a class="nav__link" id="nav_main" href="index.html" onclick="return false" acitve>НА головну
 
@@ -26,7 +28,7 @@
                         </div>
 
                         <div class="nav_item" style="position: relative; display: inline-block;">
-                            <a class="nav__link" href="#" id="our_rooms" >Наші Кімнати
+                            <a class="nav__link" href="{% url 'rooms' %}" id="our_rooms" >Наші Кімнати
                             </a>
                             <a href="#" id="our_rooms1">
                                 <i class="fas fa-hotel" id="mobile_icon"></i>
@@ -53,7 +55,7 @@
                         </div>
 
                         <div class="nav_item">
-                            <a class="nav__link" href="#">Зв'язок з нами
+                            <a class="nav__link" href="{% url 'contacts' %}">Зв'язок з нами
                             </a>
                             <a href="#">
                                 <i class="fas fa-phone" id="mobile_icon"></i>

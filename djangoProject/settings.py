@@ -27,7 +27,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATICFILES_DIRS = [
-    "D:/Универ/Второй курс/КПП/Django/app1/static",
+    "D:/programming/FourthSem/djangoProject/app1/static",
 ]
 
 # Application definition
@@ -129,5 +129,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # STATIC_ROOT = "D:/programming/FourthSem/djangoProject/app1/static/styles/styles.css"
 #
 #
-
-

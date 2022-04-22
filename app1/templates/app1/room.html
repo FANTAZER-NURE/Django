@@ -1,0 +1,295 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74e4d53d6a.js" crossorigin="anonymous"></script>
+
+    <title>Room</title>
+</head>
+<body>
+    <div class="intro">
+        <header class="header">
+
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">Каравелла</div>
+
+                    <nav class="nav">
+                        <div class="nav_item">
+                            <a class="nav__link" href="{% url 'main' %}">НА головну
+
+                            </a>
+                            <a href="../index.html">
+                                <i class="fas fa-home" id="mobile_icon"></i>
+                            </a>
+
+
+                        </div>
+
+                        <div class="nav_item" style="position: relative; display: inline-block;">
+                            <a class="nav__link" id="nav_rooms" href="{% url 'rooms' %}" id="our_rooms" >Наші Кімнати
+                            </a>
+                            <a href="#rooms" id="our_rooms1">
+                                <i class="fas fa-hotel" id="mobile_icon"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#">СІМЕЙНА КІМНАТА</a>
+                                <a href="#">ЛЮКС КІМНАТА</a>
+                                <a href="#">КІМНАТА НА ОДНОГО</a>
+                                <a href="#">КІМНАТА НА ДВОХ</a>
+                              </div>
+
+
+                        </div>
+
+                        <div class="nav_item">
+                            <a class="nav__link" href="../booking.html">Бронюйте
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-concierge-bell" id="mobile_icon"></i>
+
+                            </a>
+
+
+                        </div>
+
+                        <div class="nav_item">
+                            <a class="nav__link" href="{% url 'contacts' %}">Зв'язок з нами
+                            </a>
+                            <a href="../contact.html">
+                                <i class="fas fa-phone" id="mobile_icon"></i>
+
+                            </a>
+
+                        </div>
+
+                        <div class="nav_item">
+                            <a class="nav__link" href="#">Портфоліо
+                            </a>
+                            <i class="fas fa-history" id="mobile_icon"></i>
+
+                        </div>
+
+                        <div class="nav_item">
+                            <a class="nav__link" href="#">Галерея
+                            </a>
+                            <i class="fas fa-images" id="mobile_icon"></i>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="wrapper">
+            <div class="slider-wrapper">
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 7</div>
+                      <img src="../../static/img/room-lux1.jpg" style="width:100%">
+                      <div class="room__text">Спальня</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 7</div>
+                      <img src="../../static/img/room-lux2.jpg" style="width:100%">
+                      <div class="room__text">Вітальня</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 7</div>
+                      <img src="../../static/img/room-lux3.jpg" style="width:100%">
+                      <div class="room__text">Вітальня</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 7</div>
+                        <img src="../../static/img/room-lux4.jpg" style="width:100%">
+                        <div class="room__text">Вітальня</div>
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">5 / 7</div>
+                        <img src="../../static/img/room-lux5.jpg" style="width:100%">
+                        <div class="room__text">Вітальня</div>
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">6 / 7</div>
+                        <img src="../../static/img/room-lux6.jpg" style="width:100%">
+                        <div class="room__text">Ванна</div>
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">7 / 7</div>
+                        <img src="../../static/img/room-lux7.jpg" style="width:100%">
+                        <div class="room__text">Ванна</div>
+                      </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+
+                  </div>
+
+
+                </div>
+
+                <div class="desc_text">
+                    <h1 class="room_title">Кiмната Люкс</h1>
+
+                    <p class="desc">Щоб Ваш відпочинок, бізнес-поїздка або відрядження проходили з максимальним комфортом, забронюйте номер “Люкс” у готелі КАРАВЕЛЛА. Завдяки розташуванню готелю в центрі міста з вікон у Вас буде чудовий краєвид на Пушкінську вулицю. Якісний ремонт, нові меблі, дизайнерський інтер'єр на кшталт європейського мінімалізму відрізняють високий клас облаштування номера "Люкс".
+                        <br>
+                        <br>
+                        Подбайтеc про бронювання готелю в Одесі заздалегідь - "Люкс" номерів всього 3 штуки і на них завжди великий попит. Номер передбачає комфортне розміщення до 3 осіб.</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    <div class="description">
+        <h1 class="room_title" style="padding-top: 50px;">ОПИС</h1>
+
+        <ul class="category">
+            <li class="cat-el">Категорія: Люкс</li>
+            <li class="cat-el">Кількість номерів: Люкс</li>
+            <li class="cat-el">Кількість основних місць: Люкс</li>
+            <li class="cat-el">Кількість додаткових місць: Люкс</li>
+            <li class="cat-el">Тариф без сніданку(01.09 - 30.09): 2000 грн</li>
+            <li class="cat-el">Тариф без сніданку(01.10 - 31.10): 1800 грн</li>
+            <li class="cat-el">Тариф без сніданку(01.11 - 30.11): 1600 грн</li>
+            <li class="cat-el">Тариф без сніданку(01.12 - 29.12): 1600 грн</li>
+            <li class="cat-el">Тариф без сніданку(30.12 - 01.01): 2000 грн</li>
+
+
+
+
+        </ul>
+    </div>
+
+    <div class="decs2">
+        <div class="block-expand">
+		    <article>
+				<h2>Для тих, кому достатньо найкращого</h2>
+
+                    <p>Номер "Люкс" - найкраща пропозиція готелю КАРАВЕЛЛА для найвибагливіших гостей, які бажають розміститися з найкращими умовами. Зручне розміщення меблів та техніки, затишна та стильна обстановка в номері, продумане облаштування – все сприяє приємному перебування. Номер призначений як для індивідуального розміщення гостей, так і пар, у тому числі з дитиною.</p>
+                    <p>До Ваших
+                        послуг у номері:</p>
+                    <ul>
+                        <li>одне двоспальне (160*200 см) або два односпальні (80*200 см) ліжка з ортопедичним матрацом;</li>
+                        <li>зручний розкладний диван як місце для відпочинку чи додаткове спальне місце;</li>
+                        <li>кондиціонер;</li>
+                        <li>шафа купе;</li>
+                        <li>невеликий столик та стілець;</li>
+                        <li>LED-телевізор з кабельним TV та можливістю підключення USB-носія;</li>
+                        <li>сейф;</li>
+                        <li>міні-бар;</li>
+                        <li>чайник с набором посуду;</li>
+                        <li>цілодобовий, високошвидкісний Wi-Fi;</li>
+                        <li>у ванній кімнаті крім сантехніки є фен та косметичний набір.</li>
+                    </ul>
+
+                    <p>Діти віком до 6 років можуть мешкати в номері без додаткової плати. За потреби дитині до 3 років може бути надане дитяче ліжко-манеж.</p>
+                    <p>Оплачувані послуги:</p>
+
+                    <ul>
+                        <li>туристичний збір - 1% від усієї вартості проживання;</li>
+                        <li>ранній заїзд чи пізній виїзд;</li>
+                        <li>додаткове місце для 1 гостя — 300 грн на добу за дорослу або дитину віком від 13 років, 150 грн на добу за дитину віком від 6 до 12 років.</li>
+                    </ul>
+                    <p>Номер “Люкс” – це найкращі умови для Вашої зручності. Якщо всі номери виявилися зайнятими? Зверніть увагу на номер “<a style="color: #c19b76;" title="Забронювати номер Покращений у центрі Одеси" href="https://voyage-hotel.com.ua/nomer-uluchshennyj">Покращений</a>”.</p>
+            </article>
+		</div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer_container">
+            <div class="footer_column">
+                <h1 class="footer_title">Готель КАРАВЕЛЛА</h1>
+                <h2 class="footer_post_title">Post Title</h2>
+                <p class="admin_name"><span class="admin_color">Admin</span>, domainname.com</p>
+
+                <p class="date">Friday, 6th April 20</p>
+                <p class="footer_text">Готель КАРАВЕЛЛА: 65012 Одесса,
+                    вул. Пантелеймонівська 62.
+                    Вхід до готелю зі стороны
+                    вулиці Пушкінська</p>
+                <a href="#" class="read_more">Знайти на мапі »</a>
+            </div>
+
+            <div class="footer_column" id="links">
+                <h1 class="footer_title">Quick Links</h1>
+                <a href="#" class="footer_ref"><span class="quotes">»</span> Бронювання</a>
+                <hr class="footer_line">
+                <a href="#" class="footer_ref"><span class="quotes">»</span> Акціі</a>
+                <hr class="footer_line">
+                <a href="#" class="footer_ref"><span class="quotes">»</span> Ціни</a>
+                <hr class="footer_line">
+                <a href="#" class="footer_ref"><span class="quotes">»</span> Відгуки</a>
+                <hr class="footer_line">
+                <a href="#" class="footer_ref"><span class="quotes">»</span> Оплата</a>
+                <hr class="footer_line">
+                <a href="#" class="footer_ref"><span class="quotes">»</span> Публічна оферта</a>
+                <hr class="footer_line">
+                <a href="#" class="footer_ref"><span class="quotes">»</span> Захoди ANTI COVID</a>
+                <hr class="footer_line">
+
+            </div>
+
+            <div class="footer_column" id="tweets">
+                <h1 class="footer_title">Latest Tweets</h1>
+                <p class="footer_text"><span class="tweet">@namehere </span>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut vitae doloreet 1 day ago</p>
+                <p class="footer_text"><span class="tweet">@namehere </span>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut vitae doloreet 1 day ago.</p>
+
+            </div>
+
+            <div class="footer_column">
+                <h1 class="footer_title">Залиште Відгук</h1>
+                <form action="#" method="GET">
+                    <input type="text" placeholder="Повне ім'я">
+                    <br>
+                    <input type="email" placeholder="Email адреса">
+                    <br>
+                    <input type="text" placeholder="Тема">
+                    <br>
+                    <input type="text" placeholder="Ваше повідомлення" class="message_form">
+                    <br>
+                    <button class="form_btn">Надіслати</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src={% static "scripts/slider.js" %}></script>
+
+
+
+</body>
+</html>
