@@ -46,8 +46,10 @@
 }
 
 
+
+
 .nav__link {
-   display: inline-block;
+    display: inline-block;
     vertical-align: top;
     margin: 0 15px;
     position: relative;
@@ -69,7 +71,7 @@
     /*border: 2px solid #76c38f;*/
     padding: 10px;
     border-radius: 9px;
-    background: #c19b76;
+    /*background: #c19b76;*/
     pointer-events: none;
 
 

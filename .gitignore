@@ -1,1 +1,3 @@
-djangoProject/settings.py
+     .idea/
+     .gitignore
+     djangoProject/settings.py

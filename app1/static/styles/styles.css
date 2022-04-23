@@ -16,6 +16,15 @@ body {
     box-sizing: border-box;
 }
 
+.nav__link--active {
+    color: #fff;
+    /*border: 2px solid #76c38f;*/
+    padding: 10px;
+    border-radius: 9px;
+    background: #c19b76;
+    pointer-events: none;
+}
+
 a {
     text-decoration: none;
 }

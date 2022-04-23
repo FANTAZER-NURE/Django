@@ -4,8 +4,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def index(request):
-    return render(request, 'app1/home.html')
+# def index(request):
+#     return render(request, 'app1/home.html')
 
 
 def main(request):
@@ -13,8 +13,16 @@ def main(request):
     return render(request, 'app1/index.html')
 
 def contacts(request):
-    return render(request, 'app1/contact.html')
+    phone = request.GET.get('phone', 3801234567)
+    mail = request.GET.get('mail', 'mail@gmail.com')
+    phoneandmail = {
+        'phone': phone,
+        'mail': mail
+    }
+    return render(request, 'app1/contact.html', phoneandmail)
 
 def rooms(request):
     return render(request, 'app1/room.html')
+
+
 

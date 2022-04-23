@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+from django.core.checks import templates
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -27,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATICFILES_DIRS = [
-    "D:/programming/FourthSem/djangoProject/app1/static",
+    "D:/Универ/Второй курс/КПП/Django/app1/static",
 ]
 
 # Application definition
