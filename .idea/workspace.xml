@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d8f99c9-2357-4f0c-971f-f0fa0367aaaa" name="Changes" comment="delete .idea">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app1/templates/app1/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app1/templates/app1/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app1/templates/app1/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/app1/templates/app1/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app1/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app1/views.py" afterDir="false" />
     </list>
@@ -93,7 +93,7 @@
       <workItem from="1651146880801" duration="1281000" />
       <workItem from="1651219619213" duration="2457000" />
       <workItem from="1651326353475" duration="547000" />
-      <workItem from="1652802828461" duration="3880000" />
+      <workItem from="1652802828461" duration="5475000" />
     </task>
     <task id="LOCAL-00001" summary="Наподключал стили)))">
       <created>1650527380753</created>
