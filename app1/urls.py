@@ -8,4 +8,5 @@ urlpatterns = [
     path('contacts/<str:color>/', views.contacts, name='contacts'),
     path('rooms', views.rooms, name='rooms'),
     # path('<str:color>/', ),
+
 ]
