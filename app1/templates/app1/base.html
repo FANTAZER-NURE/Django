@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/import/login.css' %}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,6 +77,12 @@
 
                         <div class="nav_item">
                             <a class="nav__link {% block active-gallery %} {% endblock %}" href="#">Галерея
+                            </a>
+                            <i class="fas fa-images" id="mobile_icon"></i>
+
+                        </div>
+                        <div class="nav_item">
+                            <a class="nav__link {% block active-login %} {% endblock %}" href="{% url 'login' %}">Логін
                             </a>
                             <i class="fas fa-images" id="mobile_icon"></i>
 

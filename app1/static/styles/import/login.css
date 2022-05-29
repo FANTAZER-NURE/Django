@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    /*margin-top: 150px;*/
+    height: 100vh;
+    color: #c19b76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form > input {
+    outline: none;
+    border: none;
+    background: #c19b76;
+
+}
+.form > button {
+    outline: none;
+    border: none;
+    background: #c19b76;
+    width: 40%;
+    height: 100%;
+    font-family: 'Gilda Display', serif;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.form p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form p input {
+    background: rgba(193, 155, 118, 0.6);
+    outline: none;
+    justify-self: end;
+    margin: 0;
+    width: 260px;
+    box-sizing: border-box;
+    padding: 0 0 0 13px;
+}
