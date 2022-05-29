@@ -1,0 +1,27 @@
+{% extends 'app1/base.html' %}
+{% load static %}
+
+{% block title %}Contact{% endblock %}
+
+{% block active-room %}{% endblock %}
+{% block active-main %}{% endblock %}
+{% block active-login %}nav__link--active{% endblock %}
+
+{% block content %}
+
+
+    <div class = "login">
+        <h2>Bxoд</h2>
+        {% if user.is_authenticated %}
+        Вы уже выполнили вход.
+        {% else %}
+        <form method="post" class="form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="hidden" name="next" value="{{ next }}">
+            <button type="submit">Увійти</button>
+        </form>
+        {% endif %}
+    </div>
+
+{% endblock %}
