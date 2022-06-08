@@ -27,13 +27,8 @@ def rooms(request):
     return render(request, 'app1/room.html')
 
 
-# def login(request):
-#     return render(request, 'app1/registration/login.html')
-
-
-# def color(request, color = "black"):
-
-
+def book(request):
+    return render(request, 'app1/book.html')
 
 
 

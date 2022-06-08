@@ -1,0 +1,77 @@
+
+#nav_booking {
+    color: #fff;
+      /*border: 2px solid #76c38f;*/
+    padding: 10px;
+    border-radius: 9px;
+    background: #c19b76;
+    pointer-events: none;
+  }
+
+  #hidden{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+#hidden_window{
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    display: none;
+    height: 30%;
+    min-height: 130px;
+    width: 20%;
+    min-width: 200px;
+    border-radius: 10px;
+    border: 2px groove #c19b76;
+    background-color: #c19b76;
+    opacity: 0.8;
+}
+
+
+form{
+	text-align: center;
+    margin-top: 200px;
+}
+.mw-100{
+	max-width: 100%;
+}
+#form_b, .content{
+	background-color: #c19b76;
+    color: #fff;
+
+	margin: 1% 20%;
+	border-radius: 50px;
+}
+
+.submit {
+    height: 35px;
+    width: 85px;
+    background: #fff;
+    border-radius: 9px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #686868;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Georgia";
+    transition: background .35s linear, color .35s linear;
+
+}
+
+.submit:hover{
+    background: #c19b76;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+input {
+    color: #000;
+    background: #cfcfcf;
+}
+
