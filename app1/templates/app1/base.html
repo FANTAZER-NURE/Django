@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'styles/import/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/import/book.css' %}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +48,7 @@
                         </div>
 
                         <div class="nav_item">
-                            <a class="nav__link {% block active-booking%} {% endblock %}" href="#">Бронюйте
+                            <a class="nav__link {% block active-booking%} {% endblock %}" href="{% url 'book' %}">Бронюйте
                             </a>
                             <a href="#">
                                 <i class="fas fa-concierge-bell" id="mobile_icon"></i>
