@@ -10,65 +10,80 @@
 
 {% block content %}
 
-<form action="#">
-            <div id="form_b"><br>
-                <h1 style="color: #fff;">Бронювання кімнати</h1><br>
-                <div style="margin: 10px;">
-                    *Прізвище <input validate="false" id="surname_imput" type="text" onchange="surname_imput()"/><br>
-                    <span id = "text_mistake_surname" style = "display: none; color: #800000;">Неприпустиме значення</span>
-                </div>
 
-                <div style="margin: 10px;">
-                    *Ім'я <input validate="false" id="name_imput" type="text" onchange  = "name_imput()"/><br>
-                    <span id = "text_mistake_name" style = "display: none; color: #800000;">Неприпустиме значення</span>
-                </div>
+<form method="POST" class="content">
 
-                <div style="margin: 10px;">
-                    По-батькові <input validate="true" pattern = [A-za-z]{1,15} id="patronymic_imput" type="text" onchange  = "patronymic_imput()"><br>
-                    <span id = "text_mistake_patronymic" style = "display: none; color: #800000;">Неприпустиме значення</span>
-                </div>
+    <h1 style="color: #fff; margin: 20px auto 0; text-align: center">Бронювання кімнати</h1><br>
 
+    {% csrf_token %}
 
-
-                <div style="margin: 10px;">
-                    *Номер телефону <input id="phone_imput" type="tel" onchange  = "phone_imput()" placeholder="8-800-555-35-35" required/><br>
-                    <span id = "text_mistake_phone" style = "display: none; color: #800000;">Неприпустиме значення</span></div>
-                <div style="margin: 10px;">
-                    *Дата <input id="date_imput" type="date" onchange  = "date_imput()" required />
-                    *Час заселення <input id="time_imput" list="_time" type="text" onchange  = "time_imput()" placeholder="Выберіть час" required/>
-                </div>
-
-                <datalist id="_time">
-                    <option value = "9:30"></option>
-                    <option value = "10:00"></option>
-                    <option value = "10:30"></option>
-                    <option value = "11:00"></option>
-                    <option value = "12:00"></option>
-                    <option value = "12:30"></option>
-                    <option value = "13:00"></option>
-                    <option value = "13:30"></option>
-                    <option value = "14:30"></option>
-                    <option value = "16:00"></option>
-                    <option value = "16:30"></option>
-                    <option value = "18:00"></option>
-                </datalist>
-                <div style="margin: 10px;">
-                *Кімната <input id="service_imput" list="_test" type="text" onchange  = "service_imput()" placeholder="Выберіть послугу" required />
-                <datalist id="_test">
-                    <option value = "Сімейна"></option>
-                    <option value = "Люкс"></option>
-                    <option value = "На одного"></option>
-                    <option value = "На двох"></option>
-                </datalist>
-                </div>
-                    <!-- <input style="margin: 5px 10px; padding: 5px 20px; border-radius: 5px; background-color: #C50000" id = "submit_1" class = "submit" type="submit" value="Бронювати" onClick='cheak_info()'/>
-                    <input style="margin: 5px 10px; padding: 5px 20px; border-radius: 5px; background-color: #C50000" id = "submit_2" class = "submit" type="reset" value="Очистити" onClick='reset()'/><br><br> -->
-
-                    <button id = "submit_1" class = "submit" type="submit" value="Бронювати" onClick='cheak_info()'>Надіслати</button>
-                    <button id = "submit_2" class = "submit" type="reset" value="Очистити" onClick='reset()'>Очистити</button>
-
-                </div>
-            </div>
+    {{ form.first_name }}
+    {{ form.last_name }}
+    {{ form.patronymic }}
+    {{ form.phone_number }}
+    {{ form.time_of_settlement }}
+    {{ form.date_of_settlement }}
+    {{ form.customer_id }}
+    <button id = "submit_1" class = "submit" type="submit" value="Бронювати" onClick='cheak_info()'>Надіслати</button>
+    <span>{{ error }}</span>
+{#            <div id="form_b"><br>#}
+{#                <h1 style="color: #fff;">Бронювання кімнати</h1><br>#}
+{#                <div style="margin: 10px;">#}
+{#                    *Прізвище <input validate="false" id="surname_imput" type="text" onchange="surname_imput()"/><br>#}
+{#                    <span id = "text_mistake_surname" style = "display: none; color: #800000;">Неприпустиме значення</span>#}
+{#                </div>#}
+{##}
+{#                <div style="margin: 10px;">#}
+{#                    *Ім'я <input validate="false" id="name_imput" type="text" onchange  = "name_imput()"/><br>#}
+{#                    <span id = "text_mistake_name" style = "display: none; color: #800000;">Неприпустиме значення</span>#}
+{#                </div>#}
+{##}
+{#                <div style="margin: 10px;">#}
+{#                    По-батькові <input validate="true" pattern = [A-za-z]{1,15} id="patronymic_imput" type="text" onchange  = "patronymic_imput()"><br>#}
+{#                    <span id = "text_mistake_patronymic" style = "display: none; color: #800000;">Неприпустиме значення</span>#}
+{#                </div>#}
+{##}
+{##}
+{##}
+{#                <div style="margin: 10px;">#}
+{#                    *Номер телефону <input id="phone_imput" type="tel" onchange  = "phone_imput()" placeholder="8-800-555-35-35" required/><br>#}
+{#                    <span id = "text_mistake_phone" style = "display: none; color: #800000;">Неприпустиме значення</span></div>#}
+{#                <div style="margin: 10px;">#}
+{#                    *Дата <input id="date_imput" type="date" onchange  = "date_imput()" required />#}
+{#                    *Час заселення <input id="time_imput" list="_time" type="text" onchange  = "time_imput()" placeholder="Выберіть час" required/>#}
+{#                </div>#}
+{##}
+{#                <datalist id="_time">#}
+{#                    <option value = "9:30"></option>#}
+{#                    <option value = "10:00"></option>#}
+{#                    <option value = "10:30"></option>#}
+{#                    <option value = "11:00"></option>#}
+{#                    <option value = "12:00"></option>#}
+{#                    <option value = "12:30"></option>#}
+{#                    <option value = "13:00"></option>#}
+{#                    <option value = "13:30"></option>#}
+{#                    <option value = "14:30"></option>#}
+{#                    <option value = "16:00"></option>#}
+{#                    <option value = "16:30"></option>#}
+{#                    <option value = "18:00"></option>#}
+{#                </datalist>#}
+{#                <div style="margin: 10px;">#}
+{#                *Кімната <input id="service_imput" list="_test" type="text" onchange  = "service_imput()" placeholder="Выберіть послугу" required />#}
+{#                <datalist id="_test">#}
+{#                    <option value = "Сімейна"></option>#}
+{#                    <option value = "Люкс"></option>#}
+{#                    <option value = "На одного"></option>#}
+{#                    <option value = "На двох"></option>#}
+{#                </datalist>#}
+{#                </div>#}
+{#                    <!-- <input style="margin: 5px 10px; padding: 5px 20px; border-radius: 5px; background-color: #C50000" id = "submit_1" class = "submit" type="submit" value="Бронювати" onClick='cheak_info()'/>#}
+{#                    <input style="margin: 5px 10px; padding: 5px 20px; border-radius: 5px; background-color: #C50000" id = "submit_2" class = "submit" type="reset" value="Очистити" onClick='reset()'/><br><br> -->#}
+{##}
+{#                    <button id = "submit_1" class = "submit" type="submit" value="Бронювати" onClick='cheak_info()'>Надіслати</button>#}
+{#                    <button id = "submit_2" class = "submit" type="reset" value="Очистити" onClick='reset()'>Очистити</button>#}
+{##}
+{#                </div>#}
+{#            </div>#}
         </form>
 
 {% endblock %}

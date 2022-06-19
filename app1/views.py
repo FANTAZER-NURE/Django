@@ -1,10 +1,14 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
+from .forms import CustomerForm
+from .models import Customer, Room
+
 
 
 # def index(request):
 #     return render(request, 'app1/home.html')
+
 
 
 def main(request):
@@ -27,8 +31,33 @@ def rooms(request):
     return render(request, 'app1/room.html')
 
 
+def list(request):
+    customers = Customer.objects.all()
+    rooms = Room.objects.all();
+    return render(request, 'app1/list.html', {'customers': customers, 'rooms': rooms})
+
+
 def book(request):
-    return render(request, 'app1/book.html')
+    form = CustomerForm()
+    error = ''
+
+    if request.method == 'GET':
+        return render(request, 'app1/book.html')
+
+    if request.method == 'POST':
+        form = CustomerForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+            return redirect('list')
+        else:
+            error: 'Incorrect'
+
+    data = {
+        'form': form
+    }
+
+    return render(request, 'app1/book.html', data)
 
 
 

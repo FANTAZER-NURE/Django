@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'styles/import/login.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'styles/import/book.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/import/list.css' %}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,7 +78,7 @@
                         </div>
 
                         <div class="nav_item">
-                            <a class="nav__link {% block active-gallery %} {% endblock %}" href="#">Галерея
+                            <a class="nav__link {% block active-list %} {% endblock %}" href="{% url 'list' %}">Список
                             </a>
                             <i class="fas fa-images" id="mobile_icon"></i>
 
@@ -139,68 +140,68 @@
 
             </div>
 
-            <div class="footer_column" id="form">
-                <h1 class="footer_title">Залиште Відгук</h1>
-                <form action="#" method="GET" class="js_form" id="review" novalidate >
-                    <h5 class="form_text">Повне ім'я *</h5>
-                    <input type="text" placeholder="Alex Turner" class="input js_input">
-                    <br>
-                    <span class="empty_mes" id="span_one">Поле має бути заповнене</span>
-                    <br>
-                    <h5 class="form_text">Email адреса *</h5>
-                    <input placeholder="adress@mail.com" class="input js_input js_input_email" id="input">
-                    <div class="pop_up_menu" id="pop_up">
-                        <p class="pop_up_text">
-                            Еmail адреса повинна бути у форматі "name@mail.com"
-                        </p>
-                        <button class="close">&times;</button>
-                    </div>
-
-                    <br>
-                    <span class="empty_mes" id="span_two">Поле має бути заповнене</span>
-                    <br>
-                    <h5 class="form_text">Тема *</h5>
-                    <input type="text" placeholder="Обслуговування номерів" class="input js_input">
-                    <br>
-                    <span class="empty_mes" id="span_three">Поле має бути заповнене</span>
-                    <br>
-                    <h5 class="form_text">Ваше повідомлення *</h5>
-                    <input type="text" placeholder="Ваше повідомлення" id="message_form" class="input js_input">
-                    <br>
-                    <span class="empty_mes" id="span_four">Поле має бути заповнене</span>
-                    <br>
-                    <div class="pop_up_menu" id="pop_up">
-                        <p class="pop_up_text">
-                            Успішно відправлено
-                        </p>
-                        <button class="close">&times;</button>
-                    </div>
-                    <div class="btn_container">
-                        <button type="submit" class="form_btn" id="validate">Надіслати</button>
-                        <button class="form_btn" id="clear_btn" type="reset">Очистити</button>
-                    </div>
-                    <br>
-                    <h6 class="form_text">* - Обов'язкове поле</h6>
-
-                    <!-- <script>
-                        let popup = document.getElementById('pop_up'),
-                            popup_toggle = document.getElementById('validate'),
-                            popup_close = document.querySelector('.close');
-
-                        popup_toggle.onclick = function () {
-                            popup.style.display = "block";
-                        }
-
-                        popup_close.onclick = function() {
-                            popup.style.display = "none";
-
-                        }
-
-                    </script> -->
-
-                </form>
-
-            </div>
+{#            <div class="footer_column" id="form">#}
+{#                <h1 class="footer_title">Залиште Відгук</h1>#}
+{#                <form action="#" method="GET" class="js_form" id="review" novalidate >#}
+{#                    <h5 class="form_text">Повне ім'я *</h5>#}
+{#                    <input type="text" placeholder="Alex Turner" class="input js_input">#}
+{#                    <br>#}
+{#                    <span class="empty_mes" id="span_one">Поле має бути заповнене</span>#}
+{#                    <br>#}
+{#                    <h5 class="form_text">Email адреса *</h5>#}
+{#                    <input placeholder="adress@mail.com" class="input js_input js_input_email" id="input">#}
+{#                    <div class="pop_up_menu" id="pop_up">#}
+{#                        <p class="pop_up_text">#}
+{#                            Еmail адреса повинна бути у форматі "name@mail.com"#}
+{#                        </p>#}
+{#                        <button class="close">&times;</button>#}
+{#                    </div>#}
+{##}
+{#                    <br>#}
+{#                    <span class="empty_mes" id="span_two">Поле має бути заповнене</span>#}
+{#                    <br>#}
+{#                    <h5 class="form_text">Тема *</h5>#}
+{#                    <input type="text" placeholder="Обслуговування номерів" class="input js_input">#}
+{#                    <br>#}
+{#                    <span class="empty_mes" id="span_three">Поле має бути заповнене</span>#}
+{#                    <br>#}
+{#                    <h5 class="form_text">Ваше повідомлення *</h5>#}
+{#                    <input type="text" placeholder="Ваше повідомлення" id="message_form" class="input js_input">#}
+{#                    <br>#}
+{#                    <span class="empty_mes" id="span_four">Поле має бути заповнене</span>#}
+{#                    <br>#}
+{#                    <div class="pop_up_menu" id="pop_up">#}
+{#                        <p class="pop_up_text">#}
+{#                            Успішно відправлено#}
+{#                        </p>#}
+{#                        <button class="close">&times;</button>#}
+{#                    </div>#}
+{#                    <div class="btn_container">#}
+{#                        <button type="submit" class="form_btn" id="validate">Надіслати</button>#}
+{#                        <button class="form_btn" id="clear_btn" type="reset">Очистити</button>#}
+{#                    </div>#}
+{#                    <br>#}
+{#                    <h6 class="form_text">* - Обов'язкове поле</h6>#}
+{##}
+{#                    <!-- <script>#}
+{#                        let popup = document.getElementById('pop_up'),#}
+{#                            popup_toggle = document.getElementById('validate'),#}
+{#                            popup_close = document.querySelector('.close');#}
+{##}
+{#                        popup_toggle.onclick = function () {#}
+{#                            popup.style.display = "block";#}
+{#                        }#}
+{##}
+{#                        popup_close.onclick = function() {#}
+{#                            popup.style.display = "none";#}
+{##}
+{#                        }#}
+{##}
+{#                    </script> -->#}
+{##}
+{#                </form>#}
+{##}
+{#            </div>#}
         </div>
 
     </div>

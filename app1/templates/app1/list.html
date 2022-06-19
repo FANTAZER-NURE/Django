@@ -1,0 +1,65 @@
+
+{% extends 'app1/base.html' %}
+{% load static %}
+
+{% block title %}Contact{% endblock %}
+
+{% block active-room %}{% endblock %}
+{% block active-main %}{% endblock %}
+{% block active-list %}nav__link--active{% endblock %}
+
+{% block content %}
+    <div class="table__wrapper">
+
+        <h2>Відвідувачі</h2>
+
+        <div class="table">
+            <div class="table__row">
+                <h5 class="table__item table__item--header">Ім'я</h5>
+                <h5 class="table__item table__item--header">Прізвище</h5>
+                <h5 class="table__item table__item--header">Пo-батькові</h5>
+                <h5 class="table__item table__item--header">Телефон</h5>
+                <h5 class="table__item table__item--header">Час заселеня</h5>
+                <h5 class="table__item table__item--header">Дата заселення</h5>
+                <h5 class="table__item table__item--header">ID</h5>
+            </div>
+
+            {%  for el in customers %}
+                <div class="table__row">
+                    <h5 class="table__item">{{ el.first_name }}</h5>
+                    <h5 class="table__item">{{ el.last_name }}</h5>
+                    <h5 class="table__item">{{ el.patronymic }}</h5>
+                    <h5 class="table__item">{{ el.phone_number }}</h5>
+                    <h5 class="table__item">{{ el.time_of_settlement }}</h5>
+                    <h5 class="table__item">{{ el.date_of_settlement }}</h5>
+                    <h5 class="table__item">{{ el.customer_id }}</h5>
+                </div>
+            {% endfor %}
+
+        </div>
+
+    <h2>Кімнати</h2>
+
+        <div class="table table--2">
+            <div class="table__row">
+                <h5 class="table__item table__item--header">Тип кімнати</h5>
+                <h5 class="table__item table__item--header">Ім'я клієнта</h5>
+                <h5 class="table__item table__item--header">Зайнята кімната</h5>
+                <h5 class="table__item table__item--header">ID кімнати</h5>
+                <h5 class="table__item table__item--header">Кількість таких кімнат</h5>
+            </div>
+
+            {%  for el2 in rooms %}
+                <div class="table__row">
+                    <h5 class="table__item">{{ el2.type_of_room }}</h5>
+                    <h5 class="table__item">{{ el2.customer_id }}</h5>
+                    <h5 class="table__item">{{ el2.is_booked }}</h5>
+                    <h5 class="table__item">{{ el2.room_id }}</h5>
+                    <h5 class="table__item">{{ el2.room_quantity }}</h5>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+{% endblock %}
+{% block forScript %}<script src="../../static/scripts/book.js"></script>{% endblock %}
