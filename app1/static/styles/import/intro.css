@@ -1,6 +1,6 @@
 /*INTRO*/
 .intro {
-    height: 100vh;
+    height: fit-content;
 }
 
 .intro_container {

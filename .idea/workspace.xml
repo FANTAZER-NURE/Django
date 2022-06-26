@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
@@ -182,12 +183,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a578b52b-bb4c-4144-9884-cf026ca2462a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app1/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app1/static/styles/import/list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app1/templates/app1/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app1/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app1/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app1/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app1/static/styles/import/book.css" beforeDir="false" afterPath="$PROJECT_DIR$/app1/static/styles/import/book.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app1/static/styles/import/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/app1/static/styles/import/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app1/static/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app1/static/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app1/templates/app1/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app1/templates/app1/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app1/templates/app1/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/app1/templates/app1/book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app1/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2847iIZCmEvuX8SYUnyVOjdcgOq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+>>>>>>> 1b61379ddf2dd7d4d6f0e9acb0e569bdb2057057
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
+<<<<<<< HEAD
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -386,4 +429,91 @@
     <option name="LAST_COMMIT_MESSAGE" value="init2" />
   </component>
 >>>>>>> 8250a08223dc050857bff4180a5df15feba0bd28
+=======
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programming\FourthSem\djangoProject\app1\templates" />
+      <recent name="D:\programming\FourthSem\djangoProject\app1\static\styles\import" />
+      <recent name="D:\programming\FourthSem\djangoProject\app1\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="djangoProject" type="Python.DjangoServer" factoryName="Django server">
+      <module name="djangoProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a578b52b-bb4c-4144-9884-cf026ca2462a" name="Changes" comment="" />
+      <created>1650464129729</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650464129729</updated>
+      <workItem from="1650464139155" duration="8741000" />
+      <workItem from="1650554842693" duration="3510000" />
+      <workItem from="1650621828963" duration="460000" />
+      <workItem from="1651147094567" duration="3638000" />
+      <workItem from="1651247589014" duration="3351000" />
+      <workItem from="1652810968731" duration="2503000" />
+      <workItem from="1652882172913" duration="97000" />
+      <workItem from="1652888712227" duration="713000" />
+      <workItem from="1653837952325" duration="2103000" />
+      <workItem from="1653840082682" duration="5194000" />
+      <workItem from="1654699241196" duration="8026000" />
+      <workItem from="1654707876352" duration="198000" />
+      <workItem from="1654708086891" duration="5829000" />
+      <workItem from="1655638092343" duration="2743000" />
+      <workItem from="1655660189148" duration="10621000" />
+    </task>
+    <task id="LOCAL-00001" summary="init2">
+      <created>1650464778954</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650464778954</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init2" />
+    <option name="LAST_COMMIT_MESSAGE" value="init2" />
+  </component>
+>>>>>>> 1b61379ddf2dd7d4d6f0e9acb0e569bdb2057057
 </project>

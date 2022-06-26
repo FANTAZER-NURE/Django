@@ -1,15 +1,13 @@
-from django.shortcuts import render
-from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404
 
-
-# def index(request):
-#     return render(request, 'app1/home.html')
-
+from .forms import CustomerForm
+from .models import Customer, Room, Settlement
 
 def main(request):
-    # return HttpResponse("<h1>aboba2</h1>")
     return render(request, 'app1/index.html')
+
 
 @login_required(login_url='/accounts/login/')
 def contacts(request, color="#c19b76"):
@@ -27,9 +25,34 @@ def rooms(request):
     return render(request, 'app1/room.html')
 
 
+def list(request):
+    customers = Customer.objects.all()
+    rooms = Room.objects.all()
+    return render(request, 'app1/list.html', {'customers': customers, 'rooms': rooms})
+
+
 def book(request):
-    return render(request, 'app1/book.html')
+    form = CustomerForm()
+    error = ''
 
+    if request.method == 'GET':
+        return render(request, 'app1/book.html')
 
+    if request.method == 'POST':
+        form = CustomerForm(request.POST)
 
+        if form.is_valid():
+            form.save()
+            newCustomer = Customer.objects.last()
+            newSettlement = Settlement(customer_id=get_object_or_404(Customer, customer_id=newCustomer.customer_id),
+                                       room_id=get_object_or_404(Room, type_of_room=newCustomer.room_type))
+            newSettlement.save()
+            return redirect('list')
+        else:
+            error: 'Incorrect'
 
+    data = {
+        'form': form
+    }
+
+    return render(request, 'app1/book.html', data)

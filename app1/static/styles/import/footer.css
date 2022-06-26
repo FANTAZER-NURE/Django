@@ -140,18 +140,18 @@
     color: #000;
 }
 
-input {
-    width: 275px;
-    height: 35px;
-    margin-bottom: 10px;
-    background: #222222;
-    border: none;
-    border-radius: 9px;
-    color: #989898;
-    text-align: start;
-    padding-left: 4%;
+/*input {*/
+/*    width: 275px;*/
+/*    height: 35px;*/
+/*    margin-bottom: 10px;*/
+/*    background: #222222;*/
+/*    border: none;*/
+/*    border-radius: 9px;*/
+/*    color: #989898;*/
+/*    text-align: start;*/
+/*    padding-left: 4%;*/
 
-}
+/*}*/
 
 input.error {
     border: 1px solid red;
